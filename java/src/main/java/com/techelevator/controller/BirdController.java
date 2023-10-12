@@ -26,7 +26,7 @@ public class BirdController {
     }
 
 
-    @RequestMapping (path = "/birds/{birdId}", method = RequestMethod.GET)
+    @RequestMapping (path = "/bird/{birdId}", method = RequestMethod.GET)
     public Bird getBird(@PathVariable int birdId){
         Bird bird = birdDao.getBirdById(birdId);
         return bird;
